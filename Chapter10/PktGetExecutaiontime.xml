@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>PktGetExecutaiontime</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class PktGetExecutaiontime
+{        
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>main</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Runs the class with the specified arguments.
+    /// </summary>
+    /// <param name = "_args">The specified arguments.</param>
+    public static void main(Args _args)
+    {        
+        int start;
+        int end;
+        int i;
+
+        start = WinAPI::getTickCount();
+        for (i = i; i <= 100; i++)
+        {
+            sleep(1000); // pause for 1000 milliseconds
+        }
+        end = WinAPI::getTickCount();
+
+        info(strFmt("%1", end - start));
+
+
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

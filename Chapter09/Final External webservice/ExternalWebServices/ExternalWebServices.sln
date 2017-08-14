@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalWebServices", "ExternalWebServices.csproj", "{26DFF3E7-3DD3-4EBA-B28A-3F6FDED09573}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "PktExternalWebServiceDAX (USR) [Packt_Reference]", "..\PktExternalWebServiceDAX\PktExternalWebServiceDAX.rnrproj", "{E85196D5-67C3-4A41-B1AF-1FFC5A1BCAC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26DFF3E7-3DD3-4EBA-B28A-3F6FDED09573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DFF3E7-3DD3-4EBA-B28A-3F6FDED09573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DFF3E7-3DD3-4EBA-B28A-3F6FDED09573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DFF3E7-3DD3-4EBA-B28A-3F6FDED09573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85196D5-67C3-4A41-B1AF-1FFC5A1BCAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85196D5-67C3-4A41-B1AF-1FFC5A1BCAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85196D5-67C3-4A41-B1AF-1FFC5A1BCAC2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85196D5-67C3-4A41-B1AF-1FFC5A1BCAC2}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

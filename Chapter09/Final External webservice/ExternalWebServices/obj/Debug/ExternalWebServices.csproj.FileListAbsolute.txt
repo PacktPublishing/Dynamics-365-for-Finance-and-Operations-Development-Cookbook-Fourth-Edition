@@ -1,0 +1,5 @@
+I:\Book\Chapter 09\PktConsumeExternalWebservice\ExternalWebServices\bin\Debug\ExternalWebServices.dll.config
+I:\Book\Chapter 09\PktConsumeExternalWebservice\ExternalWebServices\bin\Debug\ExternalWebServices.dll
+I:\Book\Chapter 09\PktConsumeExternalWebservice\ExternalWebServices\bin\Debug\ExternalWebServices.pdb
+I:\Book\Chapter 09\PktConsumeExternalWebservice\ExternalWebServices\obj\Debug\ExternalWebServices.dll
+I:\Book\Chapter 09\PktConsumeExternalWebservice\ExternalWebServices\obj\Debug\ExternalWebServices.pdb

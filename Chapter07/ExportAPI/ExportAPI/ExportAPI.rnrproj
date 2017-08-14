@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Model>Packt_ApplicationSuit</Model>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{41310f69-5940-4635-8fce-7e139a0d0038}</ProjectGuid>
+    <Name>ExportAPI</Name>
+    <RootNamespace>ExportAPI</RootNamespace>
+    <StartupType>Form</StartupType>
+    <StartupObject>VendTable</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxForm\VendTable">
+      <SubType>Content</SubType>
+      <Name>VendTable</Name>
+      <Link>VendTable</Link>
+    </Content>
+    <Content Include="AxResource\VendorBasicTemplate">
+      <SubType>Content</SubType>
+      <Name>VendorBasicTemplate</Name>
+      <Link>VendorBasicTemplate</Link>
+    </Content>
+    <Content Include="Vendors Workbook.xlsx">
+      <SubType>Content</SubType>
+      <Name>Vendors Workbook.xlsx</Name>
+      <DependentUpon>AxResource\VendorBasicTemplate</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Dynamics\AX\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

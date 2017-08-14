@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Model>Packt_Reference</Model>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{4ff832fc-6680-47de-9a7c-7d4022e219a4}</ProjectGuid>
+    <Name>CreatingNumberSequence</Name>
+    <RootNamespace>CreatingNumberSequence</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\CustParameters_Extension">
+      <SubType>Content</SubType>
+      <Name>CustParameters_Extension</Name>
+      <Link>CustParameters_Extension</Link>
+    </Content>
+    <Content Include="AxClass\loadNumSeqCustPackt">
+      <SubType>Content</SubType>
+      <Name>loadNumSeqCustPackt</Name>
+      <Link>loadNumSeqCustPackt</Link>
+    </Content>
+    <Content Include="AxClass\NumberSeqModuleCustomer_packt">
+      <SubType>Content</SubType>
+      <Name>NumberSeqModuleCustomer_packt</Name>
+      <Link>NumberSeqModuleCustomer_packt</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Dynamics\AX\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>PktLedgerJOurnalTransEventHandler</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class PktLedgerJOurnalTransEventHandler
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>LedgerJournalTrans_Pre_insert</Name>
+				<Source><![CDATA[
+    /// <summary>
+    /// Pre event handler method on Insert method to put validations
+    /// </summary>
+    /// <param name="args"></param>
+    [PreHandlerFor(tableStr(LedgerJournalTrans), tableMethodStr(LedgerJournalTrans, insert))]
+    public static void LedgerJournalTrans_Pre_insert(XppPrePostArgs args)
+    {
+        LedgerJournalTrans      ledgerJournalTrans = Args.getThis();
+        if(ledgerJournalTrans.AmountCurCredit > 1000 )
+        {
+            Global::error("Credit amount must be less than 1000");
+        }
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Model>Packt_ApplicationSuit</Model>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>USMF</Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectGuid>{e20b6c06-c3d7-4cea-a106-1bf5473b3370}</ProjectGuid>
+    <Name>DataEntity</Name>
+    <RootNamespace>DataEntity</RootNamespace>
+    <StartupType>Form</StartupType>
+    <StartupObject>VendTable</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\InventBreakDownCreate">
+      <SubType>Content</SubType>
+      <Name>InventBreakDownCreate</Name>
+      <Link>InventBreakDownCreate</Link>
+    </Content>
+    <Content Include="AxDataEntityView\InventBreakDown">
+      <SubType>Content</SubType>
+      <Name>InventBreakDown</Name>
+      <Link>InventBreakDown</Link>
+    </Content>
+    <Content Include="AxDataEntityView\PacktInventBreakDown">
+      <SubType>Content</SubType>
+      <Name>PacktInventBreakDown</Name>
+      <Link>PacktInventBreakDown</Link>
+    </Content>
+    <Content Include="AxDataEntityView\PacktVendTableEntity">
+      <SubType>Content</SubType>
+      <Name>PacktVendTableEntity</Name>
+      <Link>DataEntity\PacktVendTableEntity</Link>
+    </Content>
+    <Content Include="AxForm\VendTable">
+      <SubType>Content</SubType>
+      <Name>VendTable</Name>
+      <Link>VendTable</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\InventBreakDownMaintain">
+      <SubType>Content</SubType>
+      <Name>InventBreakDownMaintain</Name>
+      <Link>InventBreakDownMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\InventBreakDownView">
+      <SubType>Content</SubType>
+      <Name>InventBreakDownView</Name>
+      <Link>InventBreakDownView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PacktInventBreakDownMaintain">
+      <SubType>Content</SubType>
+      <Name>PacktInventBreakDownMaintain</Name>
+      <Link>PacktInventBreakDownMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PacktInventBreakDownView">
+      <SubType>Content</SubType>
+      <Name>PacktInventBreakDownView</Name>
+      <Link>PacktInventBreakDownView</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PacktVendTableEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>PacktVendTableEntityMaintain</Name>
+      <Link>SecurityPrivileges\PacktVendTableEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\PacktVendTableEntityView">
+      <SubType>Content</SubType>
+      <Name>PacktVendTableEntityView</Name>
+      <Link>SecurityPrivileges\PacktVendTableEntityView</Link>
+    </Content>
+    <Content Include="AxTable\InventBreakDownStaging">
+      <SubType>Content</SubType>
+      <Name>InventBreakDownStaging</Name>
+      <Link>InventBreakDownStaging</Link>
+    </Content>
+    <Content Include="AxTable\PacktInventBreakDownStaging">
+      <SubType>Content</SubType>
+      <Name>PacktInventBreakDownStaging</Name>
+      <Link>PacktInventBreakDownStaging</Link>
+    </Content>
+    <Content Include="AxTable\PacktVendTable">
+      <SubType>Content</SubType>
+      <Name>PacktVendTable</Name>
+      <Link>Tables\PacktVendTable</Link>
+    </Content>
+    <Content Include="AxTable\PacktVendTableStaging">
+      <SubType>Content</SubType>
+      <Name>PacktVendTableStaging</Name>
+      <Link>Tables\PacktVendTableStaging</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataEntity" />
+    <Folder Include="SecurityPrivileges" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Dynamics\AX\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
