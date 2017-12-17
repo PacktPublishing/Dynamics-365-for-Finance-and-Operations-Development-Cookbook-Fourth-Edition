@@ -44,6 +44,3 @@ concept and customize or extend the application.
 * [Implementing Microsoft Dynamics 365 for Operations](https://www.packtpub.com/big-data-and-business-intelligence/implementing-microsoft-dynamics-365-operations?utm_source=github&utm_medium=repository&utm_campaign=9781787283336)
 
 * [BPEL Cookbook: Best Practices for SOA-based integration and composite applications development](https://www.packtpub.com/application-development/bpel-cookbook-best-practices-soa-based-integration-and-composite-application?utm_source=github&utm_medium=repository&utm_campaign=9781904811336)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
